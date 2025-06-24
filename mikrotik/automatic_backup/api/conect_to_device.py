@@ -1,5 +1,4 @@
 import socket, ssl
-from mikrotik.automatic_backup.ftp_client import connect
 
 def open_connection(dst, port, secure=False):
 	s = None
