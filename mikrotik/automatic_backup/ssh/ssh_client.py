@@ -1,5 +1,5 @@
 import paramiko
-from ftp_client import connect
+from mikrotik.automatic_backup.ftp_client import connect_to_ftp
 
 def backup(ip):
     client = paramiko.SSHClient()
@@ -20,5 +20,5 @@ def backup(ip):
     else:
         print(f"Backup successfully created on the router: {ip}")
 
-    value = connect(filename + ".rsc", ip)
+    value = connect_to_ftp(filename + ".rsc", ip)
     return value
