@@ -1,9 +1,9 @@
 from ftplib import FTP
 
-def connect_to_ftp(filename, ip):
+def connect_to_ftp(filename, ip, password):
     try:
         client = FTP(ip)
-        client.login("admin", "P@55w0rd!#")
+        client.login("admin", password)
     except:
         return 0
     value = download_file(filename, client)
