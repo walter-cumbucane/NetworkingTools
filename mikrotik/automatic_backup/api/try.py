@@ -1,8 +1,8 @@
-from api_client import ApiRos
-from conect_to_device import open_connection
+from mikrotik.automatic_backup.web.api_client import ApiRos
+from mikrotik.automatic_backup.web.conect_to_device import open_connection
 from ipaddress import ip_network
 from ping3 import ping
-from ftp_client import connect_to_ftp
+from mikrotik.automatic_backup.web.ftp_client import connect_to_ftp
 
 
  
