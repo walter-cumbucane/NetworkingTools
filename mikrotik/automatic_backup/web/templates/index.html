@@ -28,13 +28,13 @@
       border-radius: 16px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
       width: 100%;
-      max-width: 400px;
+      max-width: 420px;
       animation: fadeIn 0.8s ease-out;
     }
 
     .card h1 {
       font-size: 1.6rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       color: #1e3c72;
       text-align: center;
     }
@@ -45,20 +45,21 @@
     }
 
     label {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
       font-weight: 600;
     }
 
-    input[type="text"] {
+    input[type="text"],
+    input[type="password"] {
       padding: 0.75rem 1rem;
       border: 1px solid #ccc;
       border-radius: 8px;
       font-size: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
       transition: border 0.3s;
     }
 
-    input[type="text"]:focus {
+    input:focus {
       border-color: #1e3c72;
       outline: none;
     }
@@ -102,10 +103,17 @@
 </head>
 <body>
   <div class="card">
-    <h1>🔄 MikroTik Backup</h1>
+    <h1> MikroTik Backup Panel</h1>
     <form action="http://127.0.0.1:5000/backup" method="POST">
       <label for="networkAddress">Network Address</label>
-      <input type="text" id="networkAddress" name="networkAddress" placeholder="e.g. 192.168.88.0/24" required>
+      <input type="text" id="networkAddress" name="networkAddress" placeholder="e.g. 192.168.88.1" required>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="admin" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="••••••••" required>
+
       <button type="submit">Start Backup</button>
     </form>
   </div>

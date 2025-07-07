@@ -1,19 +1,14 @@
 from ftplib import FTP
 
-def connect_to_ftp(filename, ip):
+def connect_to_ftp(filename, ip, username, password):
     try:
         client = FTP(ip)
     except:
         print("Falha ao conectar-se ao servidor")
         return
-
-    if ip == "10.20.11.61":
-        password = "P@55w0rd!##7"
-    else:
-        password = "P@55w0rd!#"
     
     try:    
-        client.login("admin", password)
+        client.login(username, password)
     except:
         print("Autenticacao falhou no servidor FTP")
         return
