@@ -23,8 +23,7 @@ _Clone o repositório:_
 git clone https://github.com/walter-cumbucane/NetworkingTools.git
 
 cd NetworkingTools/mikrotik/automatic_backup
-_
-Instale as dependências:_
+_Instale as dependências:_
 
 pip install flask ping3
 
