@@ -16,23 +16,23 @@ Instale as dependências antes de executar o software com:
 
 pip install flask ping3
 
-⚙️ Instalação
+**⚙️ Instalação**
 
-Clone o repositório:
+_Clone o repositório:_
 
 git clone https://github.com/walter-cumbucane/NetworkingTools.git
 
 cd NetworkingTools/mikrotik/automatic_backup
-
-Instale as dependências:
+_
+Instale as dependências:_
 
 pip install flask ping3
 
-Inicie o servidor Python:
+_Inicie o servidor Python:_
 
 python app.py
 
-Acesse no navegador:
+_Acesse no navegador:_
 
 http://localhost:5000
 
