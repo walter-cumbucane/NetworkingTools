@@ -19,22 +19,28 @@ pip install flask ping3
 ⚙️ Instalação
 
 Clone o repositório:
+
 git clone https://github.com/walter-cumbucane/NetworkingTools.git
+
 cd NetworkingTools/mikrotik/automatic_backup
 
 Instale as dependências:
+
 pip install flask ping3
 
 Inicie o servidor Python:
+
 python app.py
 
 Acesse no navegador:
+
 http://localhost:5000
 
 
 🙋 Autor
 
 Walter Cumbucane
+
 https://www.linkedin.com/in/walter-cumbucane-23b3b6231
 
 
