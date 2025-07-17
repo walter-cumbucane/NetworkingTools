@@ -24,7 +24,7 @@ def backup(router, username, password):
 
             if obj.login(username, password):
                 octets = router.split(".")
-                filename = f"API_BRANCH{octets[3]}"
+                filename = f"BRANCH_{octets[3]}"
                 command=["/export", f"=file={filename}"]
                 obj.talk(command)
                 print(f"Backup concluido em : {router}")
