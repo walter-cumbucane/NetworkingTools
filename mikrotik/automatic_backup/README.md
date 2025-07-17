@@ -12,10 +12,6 @@ Ferramenta automatizada para realizar **backups da configuração de routers Mik
 
 ## 📦 Requisitos
 
-Instale as dependências antes de executar o software com:
-
-pip install flask ping3
-
 **⚙️ Instalação**
 
 _Clone o repositório:_
@@ -23,6 +19,7 @@ _Clone o repositório:_
 git clone https://github.com/walter-cumbucane/NetworkingTools.git
 
 cd NetworkingTools/mikrotik/automatic_backup
+
 _Instale as dependências:_
 
 pip install flask ping3
